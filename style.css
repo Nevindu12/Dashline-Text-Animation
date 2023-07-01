@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+svg {
+    background: #000000;
+}
+
+svg text {
+    font-size: 160px;
+    font-weight: 900;
+    stroke-width: 1px;
+    fill: transparent;
+    stroke: #0fcdd4;
+    letter-spacing: 4px;
+    animation: effect 5s infinite alternate;
+}
+
+@keyframes effect {
+    0% {
+        stroke-dasharray: 0 70%;
+    }
+    100% {
+        stroke-dasharray: 20% 0%;
+        stroke-dashoffset: 20%;
+        text-shadow: 0px 0px 20px #ff0, 0px 0px 0px 80px #ff0, 0px 0px 100px #ff0;
+    }
+}
